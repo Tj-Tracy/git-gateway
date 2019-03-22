@@ -1,0 +1,9 @@
+version: '3'
+
+services: 
+  git-gateway:
+    build: .
+    ports:
+      - 9999:9999
+    command: git-gateway
+    env_file: .env
